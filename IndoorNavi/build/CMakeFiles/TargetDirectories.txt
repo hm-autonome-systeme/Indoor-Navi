@@ -1,0 +1,5 @@
+/home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build/CMakeFiles/edit_cache.dir
+/home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build/CMakeFiles/rebuild_cache.dir
+/home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build/src/CMakeFiles/edit_cache.dir
+/home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build/src/CMakeFiles/rebuild_cache.dir
+/home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build/src/CMakeFiles/indoornavi.dir

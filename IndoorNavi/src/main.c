@@ -15,10 +15,10 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 //#include "wireless.h"
-#include "iwlib.h"
+#include "../include/iwlib.h"
 #include "wlanscan.h"
 #include "data_connection.h"
-#include "bus_component/bus_handler.h"
+#include "../bus_component/bus_handler.h"
 #include "Odometrie.h"
 #include "ScanHandler.h"
 #include "FileHandler.h"
