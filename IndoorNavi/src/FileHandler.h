@@ -12,7 +12,9 @@
 #ifndef FILEHANDLER_H_
 #define FILEHANDLER_H_
 
-FILE *fp;
+#include "data_connection.h"
+
+//FILE *fp;
 
 void openFile(char fileName[100],char mode[2]);
 

@@ -8,6 +8,8 @@
 #ifndef WLANSCAN_H_
 #define WLANSCAN_H_
 
+#include <stdint.h>
+
 typedef struct iwscan_state
 {
   /* State */

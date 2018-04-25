@@ -48,18 +48,18 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pwd218/Jussi/Indoor-Navi/IndoorNavi
+CMAKE_SOURCE_DIR = /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build
+CMAKE_BINARY_DIR = /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build/CMakeFiles /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build/src/CMakeFiles/progress.marks
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build/CMakeFiles 0
+	cd /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build/CMakeFiles /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build/src/CMakeFiles/progress.marks
+	cd /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,330 +97,33 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/indoornavi.dir/rule:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/indoornavi.dir/rule
-.PHONY : src/CMakeFiles/indoornavi.dir/rule
+src/CMakeFiles/IndoorNavi.dir/rule:
+	cd /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/IndoorNavi.dir/rule
+.PHONY : src/CMakeFiles/IndoorNavi.dir/rule
 
 # Convenience name for target.
-indoornavi: src/CMakeFiles/indoornavi.dir/rule
+IndoorNavi: src/CMakeFiles/IndoorNavi.dir/rule
 
-.PHONY : indoornavi
+.PHONY : IndoorNavi
 
 # fast build rule for target.
-indoornavi/fast:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/build
-.PHONY : indoornavi/fast
-
-ConnectionHandler.o: ConnectionHandler.h.o
-
-.PHONY : ConnectionHandler.o
-
-# target to build an object file
-ConnectionHandler.h.o:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/ConnectionHandler.h.o
-.PHONY : ConnectionHandler.h.o
-
-ConnectionHandler.i: ConnectionHandler.h.i
-
-.PHONY : ConnectionHandler.i
-
-# target to preprocess a source file
-ConnectionHandler.h.i:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/ConnectionHandler.h.i
-.PHONY : ConnectionHandler.h.i
-
-ConnectionHandler.s: ConnectionHandler.h.s
-
-.PHONY : ConnectionHandler.s
-
-# target to generate assembly for a file
-ConnectionHandler.h.s:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/ConnectionHandler.h.s
-.PHONY : ConnectionHandler.h.s
-
-FileHandler.o: FileHandler.c.o
-
-.PHONY : FileHandler.o
-
-# target to build an object file
-FileHandler.c.o:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/FileHandler.c.o
-.PHONY : FileHandler.c.o
-
-FileHandler.i: FileHandler.c.i
-
-.PHONY : FileHandler.i
-
-# target to preprocess a source file
-FileHandler.c.i:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/FileHandler.c.i
-.PHONY : FileHandler.c.i
-
-FileHandler.s: FileHandler.c.s
-
-.PHONY : FileHandler.s
-
-# target to generate assembly for a file
-FileHandler.c.s:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/FileHandler.c.s
-.PHONY : FileHandler.c.s
-
-FileHandler.o: FileHandler.h.o
-
-.PHONY : FileHandler.o
-
-# target to build an object file
-FileHandler.h.o:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/FileHandler.h.o
-.PHONY : FileHandler.h.o
-
-FileHandler.i: FileHandler.h.i
-
-.PHONY : FileHandler.i
-
-# target to preprocess a source file
-FileHandler.h.i:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/FileHandler.h.i
-.PHONY : FileHandler.h.i
-
-FileHandler.s: FileHandler.h.s
-
-.PHONY : FileHandler.s
-
-# target to generate assembly for a file
-FileHandler.h.s:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/FileHandler.h.s
-.PHONY : FileHandler.h.s
-
-Odometrie.o: Odometrie.c.o
-
-.PHONY : Odometrie.o
-
-# target to build an object file
-Odometrie.c.o:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/Odometrie.c.o
-.PHONY : Odometrie.c.o
-
-Odometrie.i: Odometrie.c.i
-
-.PHONY : Odometrie.i
-
-# target to preprocess a source file
-Odometrie.c.i:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/Odometrie.c.i
-.PHONY : Odometrie.c.i
-
-Odometrie.s: Odometrie.c.s
-
-.PHONY : Odometrie.s
-
-# target to generate assembly for a file
-Odometrie.c.s:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/Odometrie.c.s
-.PHONY : Odometrie.c.s
-
-Odometrie.o: Odometrie.h.o
-
-.PHONY : Odometrie.o
-
-# target to build an object file
-Odometrie.h.o:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/Odometrie.h.o
-.PHONY : Odometrie.h.o
-
-Odometrie.i: Odometrie.h.i
-
-.PHONY : Odometrie.i
-
-# target to preprocess a source file
-Odometrie.h.i:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/Odometrie.h.i
-.PHONY : Odometrie.h.i
-
-Odometrie.s: Odometrie.h.s
-
-.PHONY : Odometrie.s
-
-# target to generate assembly for a file
-Odometrie.h.s:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/Odometrie.h.s
-.PHONY : Odometrie.h.s
-
-ScanHandler.o: ScanHandler.c.o
-
-.PHONY : ScanHandler.o
-
-# target to build an object file
-ScanHandler.c.o:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/ScanHandler.c.o
-.PHONY : ScanHandler.c.o
-
-ScanHandler.i: ScanHandler.c.i
-
-.PHONY : ScanHandler.i
-
-# target to preprocess a source file
-ScanHandler.c.i:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/ScanHandler.c.i
-.PHONY : ScanHandler.c.i
-
-ScanHandler.s: ScanHandler.c.s
-
-.PHONY : ScanHandler.s
-
-# target to generate assembly for a file
-ScanHandler.c.s:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/ScanHandler.c.s
-.PHONY : ScanHandler.c.s
-
-ScanHandler.o: ScanHandler.h.o
-
-.PHONY : ScanHandler.o
-
-# target to build an object file
-ScanHandler.h.o:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/ScanHandler.h.o
-.PHONY : ScanHandler.h.o
-
-ScanHandler.i: ScanHandler.h.i
-
-.PHONY : ScanHandler.i
-
-# target to preprocess a source file
-ScanHandler.h.i:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/ScanHandler.h.i
-.PHONY : ScanHandler.h.i
-
-ScanHandler.s: ScanHandler.h.s
-
-.PHONY : ScanHandler.s
-
-# target to generate assembly for a file
-ScanHandler.h.s:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/ScanHandler.h.s
-.PHONY : ScanHandler.h.s
-
-blescan.o: blescan.c.o
-
-.PHONY : blescan.o
-
-# target to build an object file
-blescan.c.o:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/blescan.c.o
-.PHONY : blescan.c.o
-
-blescan.i: blescan.c.i
-
-.PHONY : blescan.i
-
-# target to preprocess a source file
-blescan.c.i:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/blescan.c.i
-.PHONY : blescan.c.i
-
-blescan.s: blescan.c.s
-
-.PHONY : blescan.s
-
-# target to generate assembly for a file
-blescan.c.s:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/blescan.c.s
-.PHONY : blescan.c.s
-
-blescan.o: blescan.h.o
-
-.PHONY : blescan.o
-
-# target to build an object file
-blescan.h.o:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/blescan.h.o
-.PHONY : blescan.h.o
-
-blescan.i: blescan.h.i
-
-.PHONY : blescan.i
-
-# target to preprocess a source file
-blescan.h.i:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/blescan.h.i
-.PHONY : blescan.h.i
-
-blescan.s: blescan.h.s
-
-.PHONY : blescan.s
-
-# target to generate assembly for a file
-blescan.h.s:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/blescan.h.s
-.PHONY : blescan.h.s
-
-data_connection.o: data_connection.c.o
-
-.PHONY : data_connection.o
-
-# target to build an object file
-data_connection.c.o:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/data_connection.c.o
-.PHONY : data_connection.c.o
-
-data_connection.i: data_connection.c.i
-
-.PHONY : data_connection.i
-
-# target to preprocess a source file
-data_connection.c.i:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/data_connection.c.i
-.PHONY : data_connection.c.i
-
-data_connection.s: data_connection.c.s
-
-.PHONY : data_connection.s
-
-# target to generate assembly for a file
-data_connection.c.s:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/data_connection.c.s
-.PHONY : data_connection.c.s
-
-data_connection.o: data_connection.h.o
-
-.PHONY : data_connection.o
-
-# target to build an object file
-data_connection.h.o:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/data_connection.h.o
-.PHONY : data_connection.h.o
-
-data_connection.i: data_connection.h.i
-
-.PHONY : data_connection.i
-
-# target to preprocess a source file
-data_connection.h.i:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/data_connection.h.i
-.PHONY : data_connection.h.i
-
-data_connection.s: data_connection.h.s
-
-.PHONY : data_connection.s
-
-# target to generate assembly for a file
-data_connection.h.s:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/data_connection.h.s
-.PHONY : data_connection.h.s
+IndoorNavi/fast:
+	cd /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/IndoorNavi.dir/build.make src/CMakeFiles/IndoorNavi.dir/build
+.PHONY : IndoorNavi/fast
 
 main.o: main.c.o
 
@@ -428,7 +131,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/main.c.o
+	cd /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/IndoorNavi.dir/build.make src/CMakeFiles/IndoorNavi.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -437,7 +140,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/main.c.i
+	cd /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/IndoorNavi.dir/build.make src/CMakeFiles/IndoorNavi.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -446,89 +149,8 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/main.c.s
+	cd /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/IndoorNavi.dir/build.make src/CMakeFiles/IndoorNavi.dir/main.c.s
 .PHONY : main.c.s
-
-point.o: point.c.o
-
-.PHONY : point.o
-
-# target to build an object file
-point.c.o:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/point.c.o
-.PHONY : point.c.o
-
-point.i: point.c.i
-
-.PHONY : point.i
-
-# target to preprocess a source file
-point.c.i:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/point.c.i
-.PHONY : point.c.i
-
-point.s: point.c.s
-
-.PHONY : point.s
-
-# target to generate assembly for a file
-point.c.s:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/point.c.s
-.PHONY : point.c.s
-
-wlanscan.o: wlanscan.c.o
-
-.PHONY : wlanscan.o
-
-# target to build an object file
-wlanscan.c.o:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/wlanscan.c.o
-.PHONY : wlanscan.c.o
-
-wlanscan.i: wlanscan.c.i
-
-.PHONY : wlanscan.i
-
-# target to preprocess a source file
-wlanscan.c.i:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/wlanscan.c.i
-.PHONY : wlanscan.c.i
-
-wlanscan.s: wlanscan.c.s
-
-.PHONY : wlanscan.s
-
-# target to generate assembly for a file
-wlanscan.c.s:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/wlanscan.c.s
-.PHONY : wlanscan.c.s
-
-wlanscan.o: wlanscan.h.o
-
-.PHONY : wlanscan.o
-
-# target to build an object file
-wlanscan.h.o:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/wlanscan.h.o
-.PHONY : wlanscan.h.o
-
-wlanscan.i: wlanscan.h.i
-
-.PHONY : wlanscan.i
-
-# target to preprocess a source file
-wlanscan.h.i:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/wlanscan.h.i
-.PHONY : wlanscan.h.i
-
-wlanscan.s: wlanscan.h.s
-
-.PHONY : wlanscan.s
-
-# target to generate assembly for a file
-wlanscan.h.s:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/wlanscan.h.s
-.PHONY : wlanscan.h.s
 
 # Help Target
 help:
@@ -537,53 +159,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... IndoorNavi"
 	@echo "... rebuild_cache"
-	@echo "... indoornavi"
-	@echo "... ConnectionHandler.o"
-	@echo "... ConnectionHandler.i"
-	@echo "... ConnectionHandler.s"
-	@echo "... FileHandler.o"
-	@echo "... FileHandler.i"
-	@echo "... FileHandler.s"
-	@echo "... FileHandler.o"
-	@echo "... FileHandler.i"
-	@echo "... FileHandler.s"
-	@echo "... Odometrie.o"
-	@echo "... Odometrie.i"
-	@echo "... Odometrie.s"
-	@echo "... Odometrie.o"
-	@echo "... Odometrie.i"
-	@echo "... Odometrie.s"
-	@echo "... ScanHandler.o"
-	@echo "... ScanHandler.i"
-	@echo "... ScanHandler.s"
-	@echo "... ScanHandler.o"
-	@echo "... ScanHandler.i"
-	@echo "... ScanHandler.s"
-	@echo "... blescan.o"
-	@echo "... blescan.i"
-	@echo "... blescan.s"
-	@echo "... blescan.o"
-	@echo "... blescan.i"
-	@echo "... blescan.s"
-	@echo "... data_connection.o"
-	@echo "... data_connection.i"
-	@echo "... data_connection.s"
-	@echo "... data_connection.o"
-	@echo "... data_connection.i"
-	@echo "... data_connection.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... point.o"
-	@echo "... point.i"
-	@echo "... point.s"
-	@echo "... wlanscan.o"
-	@echo "... wlanscan.i"
-	@echo "... wlanscan.s"
-	@echo "... wlanscan.o"
-	@echo "... wlanscan.i"
-	@echo "... wlanscan.s"
 .PHONY : help
 
 
@@ -595,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

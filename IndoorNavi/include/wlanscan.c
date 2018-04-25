@@ -7,7 +7,8 @@
 
 
 
-#include "iwlib.h"		/* Header */
+//#include "../include/iwlib.h"		/* Header */
+#include "../external/wireless-tools/wireless_tools/iwlib.h"
 #include <sys/time.h>
 
 #include "wlanscan.h"

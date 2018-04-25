@@ -8,10 +8,8 @@
 #ifndef ODOMETRIE_H_
 #define ODOMETRIE_H_
 
-typedef struct PositionNav{
-	double x;
-	double y;
-}PositionNav_t;
+#include "data_connection.h"
+
 
 typedef struct KalmanParameters {
 	Position_t position;

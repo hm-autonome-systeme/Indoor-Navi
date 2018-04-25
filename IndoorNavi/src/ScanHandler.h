@@ -12,6 +12,8 @@
 #ifndef SCANHANDLER_H_
 #define SCANHANDLER_H_
 
+#include "data_connection.h"
+
 #define numberAP 60
 #define numberMes 5
 

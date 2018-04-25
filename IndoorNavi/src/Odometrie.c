@@ -9,6 +9,9 @@
 #include<stdlib.h>
 #include<math.h>
 
+#include"Odometrie.h"
+
+/*
 typedef struct Position{
 	double x;
 	double y;
@@ -21,6 +24,8 @@ typedef struct KalmanParameters {
 	double errorAngle;
 	double Pk[3][3];
 }KalmanParameter_t;
+
+*/
 
 /**
  * Koppelnavigation
