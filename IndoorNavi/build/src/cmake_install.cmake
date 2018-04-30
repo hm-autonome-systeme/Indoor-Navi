@@ -1,4 +1,4 @@
-# Install script for directory: /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/src
+# Install script for directory: /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

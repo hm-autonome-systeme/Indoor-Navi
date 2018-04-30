@@ -1,20 +1,8 @@
 
-#include <sys/time.h>
-#include <stdlib.h>
-#include <errno.h>
+#include "../include/blescan.h"
+
 //#include <curses.h>
-#include <unistd.h>
-#include <sys/ioctl.h>
-#include <sys/socket.h>
-#include "/usr/include/bluetooth/bluetooth.h"
-#include "/usr/include/bluetooth/hci.h"
-#include "/usr/include/bluetooth/hci_lib.h"
-//#include <bluetooth/bluetooth.h>
-//#include <bluetooth/hci.h>
-//#include <bluetooth/hci_lib.h>
-#include <string.h>
-#include "blescan.h"
-#include <time.h>
+
 static char BLEAddress[3][18];
 static int BLEReadFlag=0;
 

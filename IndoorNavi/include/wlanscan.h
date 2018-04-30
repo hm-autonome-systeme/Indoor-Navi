@@ -8,7 +8,9 @@
 #ifndef WLANSCAN_H_
 #define WLANSCAN_H_
 
+#include <iwlib.h>
 #include <stdint.h>
+#include <sys/time.h>
 
 typedef struct iwscan_state
 {

@@ -6,12 +6,10 @@
  */
 
 
+#include "../include/wlanscan.h"
 
-//#include "../include/iwlib.h"		/* Header */
-#include "../external/wireless-tools/wireless_tools/iwlib.h"
-#include <sys/time.h>
+//#include <iwlib.h>
 
-#include "wlanscan.h"
 
 #define IW_SCAN_HACK		0x8000
 
@@ -35,8 +33,7 @@ print_scanning_token(struct stream_descr *	stream,	/* Stream of events */
     {
     case SIOCGIWAP:
     	memset(buffer, '\0', sizeof(buffer));
-      printf("          Cell %02d - Address: %s\n", state->ap_num,
-	     iw_saether_ntop(&event->u.ap_addr, buffer));
+//      printf("          Cell %02d - Address: %s\n", state->ap_num, iw_ether_ntop(&event->u.ap_addr, buffer));
 
       /*printf("Test: %hhu:%hhu:%hhu:%hhu:%hhu:%hhu", buffer[0],buffer[1],buffer[2],buffer[3],
     		  buffer[4],buffer[5]); //TODO: here*/
@@ -169,9 +166,9 @@ print_scanning_token(struct stream_descr *	stream,	/* Stream of events */
       break;
     case IWEVQUAL:
     	RSSIbuf =0;
-      iw_print_stats(buffer, sizeof(buffer),
-		     &event->u.qual, iw_range, has_range,&RSSIbuf);
-      printf("                    %s\n", buffer);
+      iw_print_stats(buffer, sizeof(buffer), &event->u.qual, iw_range, has_range);
+      //iw_print_stats(buffer, sizeof(buffer), &event->u.qual, iw_range, has_range,&RSSIbuf);
+      printf("%s\n", buffer);
       retScanData[state->ap_num -2].SSID = RSSIbuf;
       break;
 #ifndef WE_ESSENTIAL

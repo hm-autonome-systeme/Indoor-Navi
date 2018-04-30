@@ -12,7 +12,16 @@
 #ifndef SCANHANDLER_H_
 #define SCANHANDLER_H_
 
+#include <float.h>
+#include <iwlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "../bus_component/bus_handler.h"
+#include "blescan.h"
 #include "data_connection.h"
+#include "FileHandler.h"
+#include "wlanscan.h"
 
 #define numberAP 60
 #define numberMes 5

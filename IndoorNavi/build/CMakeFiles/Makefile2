@@ -54,20 +54,40 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi
+CMAKE_SOURCE_DIR = /home/pwd218/Jussi/Indoor-Navi/IndoorNavi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build
+CMAKE_BINARY_DIR = /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build
+
+#=============================================================================
+# Directory level rules for directory include
+
+# Convenience name for "all" pass in the directory.
+include/all:
+
+.PHONY : include/all
+
+# Convenience name for "clean" pass in the directory.
+include/clean:
+
+.PHONY : include/clean
+
+# Convenience name for "preinstall" pass in the directory.
+include/preinstall:
+
+.PHONY : include/preinstall
 
 #=============================================================================
 # Directory level rules for directory src
 
 # Convenience name for "all" pass in the directory.
+src/all: src/CMakeFiles/indoornavi.dir/all
 src/all: src/CMakeFiles/IndoorNavi.dir/all
 
 .PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
+src/clean: src/CMakeFiles/indoornavi.dir/clean
 src/clean: src/CMakeFiles/IndoorNavi.dir/clean
 
 .PHONY : src/clean
@@ -78,13 +98,50 @@ src/preinstall:
 .PHONY : src/preinstall
 
 #=============================================================================
+# Target rules for target src/CMakeFiles/indoornavi.dir
+
+# All Build rule for target.
+src/CMakeFiles/indoornavi.dir/all:
+	$(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/depend
+	$(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target indoornavi"
+.PHONY : src/CMakeFiles/indoornavi.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/indoornavi.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/indoornavi.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build/CMakeFiles 15
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/indoornavi.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/indoornavi.dir/rule
+
+# Convenience name for target.
+indoornavi: src/CMakeFiles/indoornavi.dir/rule
+
+.PHONY : indoornavi
+
+# clean rule for target.
+src/CMakeFiles/indoornavi.dir/clean:
+	$(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/clean
+.PHONY : src/CMakeFiles/indoornavi.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/indoornavi.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target src/CMakeFiles/IndoorNavi.dir
 
 # All Build rule for target.
-src/CMakeFiles/IndoorNavi.dir/all:
+src/CMakeFiles/IndoorNavi.dir/all: src/CMakeFiles/indoornavi.dir/all
 	$(MAKE) -f src/CMakeFiles/IndoorNavi.dir/build.make src/CMakeFiles/IndoorNavi.dir/depend
 	$(MAKE) -f src/CMakeFiles/IndoorNavi.dir/build.make src/CMakeFiles/IndoorNavi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build/CMakeFiles --progress-num=1,2 "Built target IndoorNavi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build/CMakeFiles --progress-num=1,2 "Built target IndoorNavi"
 .PHONY : src/CMakeFiles/IndoorNavi.dir/all
 
 # Include target in all.
@@ -94,9 +151,9 @@ all: src/CMakeFiles/IndoorNavi.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/IndoorNavi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/IndoorNavi.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jprobst/Dokumente/Indoor-Navi/IndoorNavi/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/IndoorNavi.dir/rule
 
 # Convenience name for target.

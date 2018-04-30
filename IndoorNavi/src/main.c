@@ -17,12 +17,12 @@
 //#include "wireless.h"
 //#include "../include/iwlib.h"
 //#include "wlanscan.h"
-#include "data_connection.h"
+//#include <iwlib.h>
 #include "../bus_component/bus_handler.h"
-#include "Odometrie.h"
-#include "ScanHandler.h"
-#include "FileHandler.h"
-//#include "data_connection.h"
+#include "../include/data_connection.h"
+#include "../include/Odometrie.h"
+#include "../include/ScanHandler.h"
+#include "../include/FileHandler.h"
 //#include "ConnectionHandler.h"
 
 

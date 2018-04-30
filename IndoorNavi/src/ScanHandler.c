@@ -8,19 +8,9 @@
  *      Author: Thai
  *
  */
-#include <float.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include "../include/ScanHandler.h"
 
-//#include "iwlib.h"
-#include <iwlib.h>
-#include "data_connection.h"
-#include "../bus_component/bus_handler.h"
-#include "../include/wlanscan.h"
-#include "FileHandler.h"
 
-#include "ScanHandler.h"
-#include "blescan.h"
 
 /**
  * WLAN:
