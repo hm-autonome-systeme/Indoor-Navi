@@ -22,7 +22,7 @@
 
 
 int main(int argc, char*argv[]){
-    if(argc < 5) {
+    if(argc < 1) {
         printf("--(Info) Missing Arguments. Usage:\n");
         printf("--(Info) Vermessung 0 0 Bluetooth\tor\n");
         printf("--(Info) Vermessung 0 0 Wlan\t\tor\n");

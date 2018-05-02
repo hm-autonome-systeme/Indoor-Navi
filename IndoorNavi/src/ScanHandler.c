@@ -27,8 +27,8 @@
  */
 void navigate(int argc, char **argv, int skfd, PositionList_t positionList) {
 //    char *dev = "wlp1s0";
-    char *dev = "wlp3s0";
-    //	char *dev = "wlan0";
+//    char *dev = "wlp3s0";
+    char *dev = "wlan0";
     //char *cmd = "scan";
     char **args = argv +3;
     int count = argc -3;
@@ -363,8 +363,8 @@ void navigate(int argc, char **argv, int skfd, PositionList_t positionList) {
 void scanWlan(int argc, char **argv, int skfd, Position_t position) {
 
     //char *dev = "wlp1s0";
-    char *dev = "wlp3s0"; // Jussi's laptop
-    //	char *dev = "wlan0";
+    //char *dev = "wlp3s0"; // Jussi's laptop
+    char *dev = "wlan0";
     //char *cmd = "scan";
     char **args = argv +5;
     int count = argc -5;

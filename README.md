@@ -26,3 +26,11 @@ Projekt autonome Systeme Indoor Navigation mit Wlan und Bluetooth
 * Wlan Treiber herausfinden mit:
     * `iw dev`  
 * Im `ScanHandler.c` in `navigate` und `scanwlan` aendern  
+* Bluetooth beacons:
+	* FF:D3:98:1D:EC:EF 
+	  MiniBeacon_01257
+	* F6:91:E3:81:B9:6B 
+	  MiniBeacon_01310
+	* FE:2F:13:AA:54:E0 
+	  MiniBeacon_01178
+
