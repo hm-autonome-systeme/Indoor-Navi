@@ -14,6 +14,10 @@
 
 #include "data_connection.h"
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 //FILE *fp;
 
 void openFile(char fileName[100],char mode[2]);

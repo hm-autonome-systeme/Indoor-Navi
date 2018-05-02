@@ -20,13 +20,13 @@
 #include <time.h>
 #include <unistd.h>
 
- struct blescan{
-	char SSID[18];
-	int RSSI;
+struct blescan{
+    char SSID[18];
+    int RSSI;
 };
- typedef struct{
-	 struct blescan blescan[3];
- }blescan_t;
+typedef struct{
+    struct blescan blescan[3];
+}blescan_t;
 
- int bleScan(blescan_t* bleData);
+int bleScan(blescan_t* bleData);
 #endif /* BLESCAN_H_ */

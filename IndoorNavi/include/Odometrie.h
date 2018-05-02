@@ -10,13 +10,16 @@
 
 #include "data_connection.h"
 
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
 
 typedef struct KalmanParameters {
-	Position_t position;
-	Position_t errorPosition;
-	double angle;
-	double errorAngle;
-	double Pk[3][3];
+    Position_t position;
+    Position_t errorPosition;
+    double angle;
+    double errorAngle;
+    double Pk[3][3];
 }KalmanParameter_t;
 
 Position_t KoppelNavigation(Position_t oldPosition, double distance, double angle);

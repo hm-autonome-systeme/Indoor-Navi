@@ -1,5 +1,5 @@
 
-set(SOURCES blescan.c data_connection.c FileHandler.c Odometrie.c point.c ScanHandler.c wlanscan.c
+set(SOURCES blescan.c data_connection.c FileHandler.c Odometrie.c ScanHandler.c wlanscan.c
     ../include/blescan.h  ../include/ConnectionHandler.h  ../include/data_connection.h  ../include/FileHandler.h  ../include/Odometrie.h  ../include/ScanHandler.h  ../include/wlanscan.h
     )
 

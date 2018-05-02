@@ -491,33 +491,6 @@ main.c.s:
 	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/IndoorNavi.dir/build.make src/CMakeFiles/IndoorNavi.dir/main.c.s
 .PHONY : main.c.s
 
-point.o: point.c.o
-
-.PHONY : point.o
-
-# target to build an object file
-point.c.o:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/point.c.o
-.PHONY : point.c.o
-
-point.i: point.c.i
-
-.PHONY : point.i
-
-# target to preprocess a source file
-point.c.i:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/point.c.i
-.PHONY : point.c.i
-
-point.s: point.c.s
-
-.PHONY : point.s
-
-# target to generate assembly for a file
-point.c.s:
-	cd /home/pwd218/Jussi/Indoor-Navi/IndoorNavi/build && $(MAKE) -f src/CMakeFiles/indoornavi.dir/build.make src/CMakeFiles/indoornavi.dir/point.c.s
-.PHONY : point.c.s
-
 wlanscan.o: wlanscan.c.o
 
 .PHONY : wlanscan.o
@@ -594,9 +567,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... point.o"
-	@echo "... point.i"
-	@echo "... point.s"
 	@echo "... wlanscan.o"
 	@echo "... wlanscan.i"
 	@echo "... wlanscan.s"
